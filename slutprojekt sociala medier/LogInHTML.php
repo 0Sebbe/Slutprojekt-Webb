@@ -10,7 +10,7 @@ Skriv användarnam: <input type="text" name="namn">
 <br>
 Skriv lösenord: <input type="password" name="lösenord">
 <br>
-<input type="submit">
+Logga in<input type="submit">
 </form>
 
 </body>
