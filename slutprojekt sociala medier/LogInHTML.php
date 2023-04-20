@@ -2,13 +2,10 @@
 <body bgcolor="FFB6C1">
 <head><title>Kee-Wee log in</title></head>
 
-<!-- inputbox för användarnamn --> 
-<!-- inputbox för lösenord--> 
-
-<form action="reg01.php" method="POST">
-Skriv användarnam: <input type="text" name="namn">
+<form action="regLogin.php" method="POST">
+Skriv användarnam: <input type="text" name="loginNamn">
 <br>
-Skriv lösenord: <input type="password" name="lösenord">
+Skriv lösenord: <input type="password" name="loginLösenord">
 <br>
 Logga in<input type="submit">
 </form>

@@ -6,7 +6,7 @@
 <!-- inputbox för lösenord--> 
 <!-- ifall lösenord mindre än 6 tecken inte godkänt--> 
 
-<form action="reg01.php" method="POST">
+<form action="regRegister.php" method="POST">
 Skriv användarnam: <input type="text" name="namn">
 <br>
 Skriv lösenord: <input type="password" name="lösenord">
