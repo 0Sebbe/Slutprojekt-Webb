@@ -3,11 +3,14 @@
 <head><title>Kee-Wee log in</title></head>
 
 <form action="regLogin.php" method="POST">
-Skriv användarnam: <input type="text" name="loginNamn">
+<p style="color:white;">Skriv användarnamn: </p> 
+<input type="text" name="loginNamn">
 <br>
-Skriv lösenord: <input type="password" name="loginLösenord">
+<p style="color:white;">Skriv lösenord: </p> 
+<input type="password" name="loginLösenord">
 <br>
-Logga in<input type="submit">
+<p style="color:white;">Logga in</p>
+<input type="submit">
 </form>
 
 </body>

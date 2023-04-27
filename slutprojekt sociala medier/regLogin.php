@@ -8,11 +8,18 @@ while ($row = $Användare->fetchArray(SQLITE3_ASSOC))
 {
 	if($row['användarnamn'] == $loginNamn && $row['lösenord'] == $loginLösenord )
 	{
-	header("Location: MainHTML.php");
+		header("Location: MainHTML.php");
 	}
 	else
 	{
-	header("Location: LogInHTML.php");
+		echo "Fel användarnamn eller lösenord";
+		?>
+		<html>
+			<form action = "LogInHTML.php" method="GET"
+			<BR> Till logga in <input type="submit">
+			</form>
+		</html>
+		<?php
 	}
 }
 
