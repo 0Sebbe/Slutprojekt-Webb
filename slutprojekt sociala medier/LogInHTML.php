@@ -12,6 +12,10 @@
 <p style="color:white;">Logga in</p>
 <input type="submit">
 </form>
+<form action="RegisterHTML.php" method="POST">
+<p style="color:white;">Skapa nytt konto</p>
+<input type="submit">
+</form>
 
 </body>
 </html>
