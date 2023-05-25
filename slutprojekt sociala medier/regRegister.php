@@ -7,8 +7,10 @@ $db = new SQLite3('Användare.sq3'); #Skapar eller öppnar en databas som kallas
 
 if($tempLösenord == $tempLösenord2 && strlen($tempLösenord) >= 5)
 {
+	$hashedLösenord = hash('sha3-512', $tempLösenord); #Krypterar och sparar lösenordet,
+
 	$db->exec("CREATE TABLE IF NOT EXISTS ANVÄNDARE(användarnamn text unique, lösenord text)");  #Skapa ett table i databasen ifall det inte finns
-	$db->exec("INSERT INTO ANVÄNDARE VALUES('".$tempNamn."',".$tempLösenord.")");  #Lägger in de sparade värdena i table:et  
+	$db->exec("INSERT INTO ANVÄNDARE VALUES('".$tempNamn."','".$hashedLösenord."')");  #Lägger in de sparade värdena i table:et  
 	
 	header("Location: LogInHTML.php");
 }
@@ -18,4 +20,4 @@ else
 }
 
 
-?>
+?>'

@@ -1,3 +1,16 @@
+<?php
+#OBS FUNKAR INTE JUST NU
+if(isset($_COOKIE["checkLogin"])) #Tittar ifall användaren är inloggad
+{
+
+}
+else
+{
+header("Location:LogInHTML.php");
+}
+
+?>
+
 <html>
 <body bgcolor="FFB6C1">
 <head><title>Kee-Wee</title></head>
